@@ -1,0 +1,25 @@
+<div class="left-nav--title">
+  首页 ＞ {{data.name}}
+</div>
+<div class="left-nav--list">
+  <div class="nav-list--title">
+    商家入驻申请
+  </div>
+  <ul>
+    <li class='{{dealIndex 1}}'>入驻协议</li>
+    {{#if data.userType}}
+      <li class="{{dealIndex 2.1}}">实名认证</li>
+    {{/if}}
+    <li class='{{dealIndex 2}}'>{{data.TagName}}</li>
+    <li class='{{dealIndex 3}}'>店铺经营信息</li>
+    <li class='{{dealIndex 4}}'>店铺审核中</li>
+    <li class='{{dealIndex 5}}'>审核结果</li>
+  </ul>
+  <div class="nav-list--title">
+    平台联系方式
+  </div>
+  <ul>
+    <li>电话：{{data.phone}}</li>
+    <li>邮箱：{{data.email}}</li>
+  </ul>
+</div>
